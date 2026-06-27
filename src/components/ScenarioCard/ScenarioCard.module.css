@@ -1,0 +1,51 @@
+.card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+}
+
+.situation {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.feedback {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--color-feedback-bg);
+  border-radius: 12px;
+  padding: 16px;
+  animation: fadeIn 0.3s ease;
+}
+
+.feedbackIcon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feedback p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

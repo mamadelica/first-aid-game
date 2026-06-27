@@ -1,0 +1,54 @@
+.page {
+  min-height: 100vh;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 12px;
+}
+
+.back {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  cursor: pointer;
+  padding: 8px 0;
+  flex-shrink: 0;
+}
+
+.back:hover { color: var(--color-text); }
+
+.scenarioTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.score {
+  font-weight: 700;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

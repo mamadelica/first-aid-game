@@ -1,0 +1,24 @@
+.btn {
+  width: 100%;
+  padding: 18px 24px;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 14px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, transform 0.12s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  transform: translateX(4px);
+}
+
+.btn:active {
+  transform: translateX(2px) scale(0.99);
+}

@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #e53935;
+  --color-primary-light: #fff5f5;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-surface: #ffffff;
+  --color-bg: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-feedback-bg: #fffbeb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
+}
