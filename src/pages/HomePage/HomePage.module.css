@@ -97,4 +97,18 @@
   font-size: 0.8rem;
   color: var(--color-muted);
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.credit:hover {
+  color: var(--color-primary);
 }
