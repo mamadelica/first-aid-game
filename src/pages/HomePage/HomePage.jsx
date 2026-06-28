@@ -54,6 +54,14 @@ export default function HomePage() {
 
       <footer className={styles.footer}>
         <p>Гра створена в освітніх цілях. Не замінює курси з першої допомоги.</p>
+        <a
+          className={styles.credit}
+          href="https://github.com/mamadelica"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          developed by mamadelica
+        </a>
       </footer>
     </div>
   );
