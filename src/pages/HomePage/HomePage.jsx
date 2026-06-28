@@ -26,9 +26,9 @@ export default function HomePage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Перша допомога</h1>
+        <h1 className={styles.title}>Політравма</h1>
         <p className={styles.subtitle}>
-          Навчальна гра: чи зможеш ти врятувати людину?
+          Навчальна гра з першої допомоги: чи зможеш ти врятувати людину?
         </p>
       </header>
 
