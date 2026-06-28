@@ -21,11 +21,8 @@ export default function GamePage() {
   }, [state.scenarioId, navigate]);
 
   useEffect(() => {
-    if (state.outcome) {
-      const timer = setTimeout(() => {
-        navigate('/result');
-      }, state.feedback ? 2000 : 0);
-      return () => clearTimeout(timer);
+    if (state.outcome && !state.feedback) {
+      navigate('/result');
     }
   }, [state.outcome, state.feedback, navigate]);
 
@@ -44,9 +41,13 @@ export default function GamePage() {
         ? (choice.nextStepId === 'outcome-success' ? 'success' : 'failure')
         : null,
     });
+  }
 
-    if (!isOutcome) {
-      setTimeout(() => dispatch({ type: 'CLEAR_FEEDBACK' }), 1800);
+  function handleContinue() {
+    if (state.outcome) {
+      navigate('/result');
+    } else {
+      dispatch({ type: 'ADVANCE_STEP' });
     }
   }
 
@@ -72,13 +73,19 @@ export default function GamePage() {
         />
 
         <div className={styles.choices}>
-          {!state.feedback && currentStep.choices.map((choice) => (
-            <ChoiceButton
-              key={choice.id}
-              choice={choice}
-              onClick={() => handleChoice(choice)}
-            />
-          ))}
+          {state.feedback ? (
+            <button className={styles.continueBtn} onClick={handleContinue}>
+              {state.outcome ? 'Переглянути результат →' : 'Далі →'}
+            </button>
+          ) : (
+            currentStep.choices.map((choice) => (
+              <ChoiceButton
+                key={choice.id}
+                choice={choice}
+                onClick={() => handleChoice(choice)}
+              />
+            ))
+          )}
         </div>
       </main>
     </div>

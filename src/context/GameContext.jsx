@@ -5,6 +5,7 @@ const GameContext = createContext(null);
 const initialState = {
   scenarioId: null,
   currentStepId: null,
+  pendingNextStepId: null,
   history: [],       // [{stepId, choiceId, isCorrect}]
   score: 0,
   outcome: null,     // 'success' | 'failure' | null
@@ -29,13 +30,18 @@ function gameReducer(state, action) {
           isCorrect: action.isCorrect,
         }],
         score: state.score + (action.isCorrect ? action.points : 0),
-        currentStepId: action.nextStepId,
+        pendingNextStepId: action.nextStepId,
         feedback: action.feedback,
         outcome: action.outcome ?? null,
       };
 
-    case 'CLEAR_FEEDBACK':
-      return { ...state, feedback: null };
+    case 'ADVANCE_STEP':
+      return {
+        ...state,
+        currentStepId: state.pendingNextStepId,
+        pendingNextStepId: null,
+        feedback: null,
+      };
 
     case 'RESET':
       return initialState;
