@@ -15,7 +15,10 @@
 .title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: var(--color-text);
+  background: linear-gradient(135deg, var(--color-text) 40%, var(--color-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 8px;
 }
 

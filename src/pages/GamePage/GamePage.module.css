@@ -13,6 +13,11 @@
   justify-content: space-between;
   padding: 16px 0;
   gap: 12px;
+  position: sticky;
+  top: 0;
+  background: rgba(249, 250, 251, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 10;
 }
 
 .back {
@@ -38,6 +43,10 @@
   font-weight: 700;
   color: var(--color-primary);
   flex-shrink: 0;
+  background: var(--color-primary-light);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
 }
 
 .main {
@@ -63,12 +72,19 @@
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
   animation: fadeIn 0.3s ease;
+  box-shadow: 0 4px 14px rgba(229, 57, 53, 0.25);
 }
 
 .continueBtn:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(229, 57, 53, 0.32);
+}
+
+.continueBtn:active {
+  transform: translateY(0);
 }
 
 @keyframes fadeIn {
