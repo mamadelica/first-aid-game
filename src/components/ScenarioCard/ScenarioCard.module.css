@@ -35,9 +35,15 @@
 }
 
 .feedbackIcon {
-  font-size: 1.25rem;
+  font-size: 1rem;
   flex-shrink: 0;
-  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #fef3c7;
 }
 
 .feedback p {

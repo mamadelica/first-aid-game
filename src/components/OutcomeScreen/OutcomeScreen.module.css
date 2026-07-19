@@ -114,10 +114,17 @@
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(229, 57, 53, 0.22);
 }
 
-.btnRetry:hover { opacity: 0.88; }
+.btnRetry:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(229, 57, 53, 0.3);
+}
+
+.btnRetry:active { transform: translateY(0); }
 
 .btnHome {
   padding: 16px;
@@ -129,10 +136,13 @@
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, transform 0.15s;
 }
 
 .btnHome:hover {
   border-color: var(--color-text);
   color: var(--color-text);
+  transform: translateY(-2px);
 }
+
+.btnHome:active { transform: translateY(0); }
