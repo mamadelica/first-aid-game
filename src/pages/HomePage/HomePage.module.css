@@ -92,6 +92,12 @@
   font-size: 1.5rem;
   color: var(--color-muted);
   flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.card:hover .cardArrow {
+  transform: translateX(4px);
+  color: var(--color-primary);
 }
 
 .badge {
@@ -101,11 +107,12 @@
   font-size: 0.75rem;
   font-weight: 600;
   width: fit-content;
+  border: 1px solid transparent;
 }
 
-.badge--easy { background: #d1fae5; color: #065f46; }
-.badge--medium { background: #fef3c7; color: #92400e; }
-.badge--hard { background: #fee2e2; color: #991b1b; }
+.badge--easy { background: #d1fae5; color: #065f46; border-color: #a7f3d0; }
+.badge--medium { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+.badge--hard { background: #fee2e2; color: #991b1b; border-color: #fecaca; }
 
 .footer {
   text-align: center;

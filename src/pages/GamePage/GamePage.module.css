@@ -26,11 +26,17 @@
   font-size: 0.9rem;
   color: var(--color-muted);
   cursor: pointer;
-  padding: 8px 0;
+  padding: 8px 12px;
+  margin-left: -12px;
+  border-radius: 999px;
   flex-shrink: 0;
+  transition: color 0.2s, background 0.2s;
 }
 
-.back:hover { color: var(--color-text); }
+.back:hover {
+  color: var(--color-text);
+  background: var(--color-border);
+}
 
 .scenarioTitle {
   font-weight: 700;

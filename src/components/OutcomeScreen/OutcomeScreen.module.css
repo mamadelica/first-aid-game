@@ -25,8 +25,18 @@
 
 .emoji {
   font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
   animation: emojiPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
 }
+
+.success .emoji { background: #d1fae5; }
+.failure .emoji { background: #fee2e2; }
 
 @keyframes cardIn {
   from { opacity: 0; transform: translateY(12px); }
@@ -61,6 +71,7 @@
   background: var(--color-bg);
   border-radius: 16px;
   padding: 20px;
+  border: 1px solid var(--color-border);
 }
 
 .scoreLabel {
@@ -87,7 +98,7 @@
 
 .scoreFill {
   height: 100%;
-  background: var(--color-primary);
+  background: linear-gradient(90deg, #ef5350, var(--color-primary));
   border-radius: 999px;
   transition: width 0.6s ease;
 }
