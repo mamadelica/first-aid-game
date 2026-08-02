@@ -47,12 +47,13 @@
 
 .score {
   font-weight: 700;
-  color: var(--color-primary);
+  color: #b45309;
   flex-shrink: 0;
-  background: var(--color-primary-light);
+  background: var(--color-accent-light);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
+  border: 1px solid #fde68a;
 }
 
 .main {
