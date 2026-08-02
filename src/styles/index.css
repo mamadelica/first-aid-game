@@ -1,10 +1,13 @@
 :root {
-  --color-primary: #e53935;
-  --color-primary-light: #fff5f5;
+  --color-primary: #dc2626;
+  --color-primary-dark: #b91c1c;
+  --color-primary-light: #fff1f0;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fffbeb;
   --color-text: #1a1a1a;
   --color-muted: #6b7280;
   --color-surface: #ffffff;
-  --color-bg: #f9fafb;
+  --color-bg: #f8f7fb;
   --color-border: #e5e7eb;
   --color-feedback-bg: #fffbeb;
 }
@@ -26,8 +29,8 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 15% 0%, rgba(229, 57, 53, 0.06), transparent 45%),
-    radial-gradient(circle at 100% 20%, rgba(229, 57, 53, 0.04), transparent 40%),
+    radial-gradient(circle at 15% 0%, rgba(220, 38, 38, 0.07), transparent 45%),
+    radial-gradient(circle at 100% 20%, rgba(245, 158, 11, 0.05), transparent 40%),
     var(--color-bg);
   background-attachment: fixed;
   color: var(--color-text);

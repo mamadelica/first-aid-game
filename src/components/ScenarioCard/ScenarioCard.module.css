@@ -45,7 +45,8 @@
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  background: #fef3c7;
+  background: var(--color-accent-light);
+  border: 1px solid #fde68a;
 }
 
 .feedback p {

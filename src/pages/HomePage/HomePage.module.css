@@ -110,9 +110,9 @@
   border: 1px solid transparent;
 }
 
-.badge--easy { background: #d1fae5; color: #065f46; border-color: #a7f3d0; }
-.badge--medium { background: #fef3c7; color: #92400e; border-color: #fde68a; }
-.badge--hard { background: #fee2e2; color: #991b1b; border-color: #fecaca; }
+.badge--easy { background: #dcfce7; color: #15803d; border-color: #bbf7d0; }
+.badge--medium { background: #fef3c7; color: #b45309; border-color: #fde68a; }
+.badge--hard { background: #fee2e2; color: #b91c1c; border-color: #fecaca; }
 
 .footer {
   text-align: center;
