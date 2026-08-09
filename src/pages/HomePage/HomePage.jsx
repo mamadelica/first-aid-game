@@ -39,7 +39,9 @@ export default function HomePage() {
             className={styles.card}
             onClick={() => handleStart(scenario)}
           >
-            <span className={styles.cardIcon}>{scenario.icon}</span>
+            <span className={`${styles.cardIcon} ${styles[`cardIcon--${scenario.difficulty}`]}`}>
+              {scenario.icon}
+            </span>
             <div className={styles.cardBody}>
               <h2 className={styles.cardTitle}>{scenario.title}</h2>
               <p className={styles.cardDesc}>{scenario.description}</p>
