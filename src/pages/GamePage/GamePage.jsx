@@ -68,6 +68,7 @@ export default function GamePage() {
 
       <main className={styles.main}>
         <ScenarioCard
+          key={currentStep.id}
           situation={currentStep.situation}
           feedback={state.feedback}
         />
