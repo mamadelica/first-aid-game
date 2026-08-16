@@ -28,6 +28,8 @@ export default function GamePage() {
 
   if (!scenario || !currentStep) return null;
 
+  const lastChoice = state.history[state.history.length - 1];
+
   function handleChoice(choice) {
     const isOutcome = choice.nextStepId.startsWith('outcome-');
     dispatch({
@@ -71,6 +73,7 @@ export default function GamePage() {
           key={currentStep.id}
           situation={currentStep.situation}
           feedback={state.feedback}
+          isCorrect={lastChoice?.isCorrect}
         />
 
         <div className={styles.choices}>
