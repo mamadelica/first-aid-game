@@ -26,6 +26,7 @@ export default function HomePage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
+        <span className={styles.logo}>🚑</span>
         <h1 className={styles.title}>Політравма</h1>
         <p className={styles.subtitle}>
           Навчальна гра з першої допомоги: чи зможеш ти врятувати людину?

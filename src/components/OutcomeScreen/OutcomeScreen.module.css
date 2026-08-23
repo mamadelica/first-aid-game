@@ -135,6 +135,15 @@
   box-shadow: 0 8px 20px rgba(229, 57, 53, 0.3);
 }
 
+.retryIcon {
+  display: inline-block;
+  transition: transform 0.35s ease;
+}
+
+.btnRetry:hover .retryIcon {
+  transform: rotate(-90deg);
+}
+
 .btnRetry:active { transform: translateY(0); }
 
 .btnHome {

@@ -25,10 +25,10 @@ export default function OutcomeScreen({ outcome, outcomeData, score, maxScore, o
 
         <div className={styles.actions}>
           <button className={styles.btnRetry} onClick={onRetry}>
-            Спробувати ще раз
+            <span className={styles.retryIcon}>↻</span> Спробувати ще раз
           </button>
           <button className={styles.btnHome} onClick={onHome}>
-            До списку сценаріїв
+            ☰ До списку сценаріїв
           </button>
         </div>
       </div>
