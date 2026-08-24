@@ -44,6 +44,11 @@
   font-size: 1rem;
   color: var(--color-text);
   text-align: center;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .score {
@@ -72,6 +77,9 @@
 
 .continueBtn {
   align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 14px 32px;
   background: var(--color-primary);
   color: #fff;
@@ -83,6 +91,15 @@
   transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
   animation: fadeIn 0.3s ease;
   box-shadow: 0 4px 14px rgba(229, 57, 53, 0.25);
+}
+
+.continueArrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.continueBtn:hover .continueArrow {
+  transform: translateX(4px);
 }
 
 .continueBtn:hover {

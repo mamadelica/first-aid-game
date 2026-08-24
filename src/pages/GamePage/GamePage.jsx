@@ -79,7 +79,8 @@ export default function GamePage() {
         <div className={styles.choices}>
           {state.feedback ? (
             <button className={styles.continueBtn} onClick={handleContinue}>
-              {state.outcome ? 'Переглянути результат →' : 'Далі →'}
+              {state.outcome ? 'Переглянути результат' : 'Далі'}
+              <span className={styles.continueArrow}>→</span>
             </button>
           ) : (
             currentStep.choices.map((choice) => (
