@@ -29,7 +29,9 @@
   color: var(--color-text);
   font-weight: 500;
   padding-left: 16px;
-  border-left: 3px solid var(--color-primary);
+  border-image: linear-gradient(180deg, var(--color-primary), var(--color-accent)) 1;
+  border-left: 3px solid;
+  white-space: pre-line;
 }
 
 .feedback {
@@ -80,6 +82,7 @@
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--color-text);
+  white-space: pre-line;
 }
 
 @keyframes fadeIn {
