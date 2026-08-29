@@ -177,3 +177,29 @@
 .credit:hover {
   color: var(--color-primary);
 }
+
+@media (max-width: 380px) {
+  .page {
+    padding: 24px 12px 48px;
+    gap: 28px;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .cardIcon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.6rem;
+  }
+}
