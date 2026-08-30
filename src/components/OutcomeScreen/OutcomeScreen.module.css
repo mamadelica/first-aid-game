@@ -125,7 +125,7 @@
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;
-  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s, background 0.15s;
   box-shadow: 0 4px 14px rgba(229, 57, 53, 0.22);
 }
 
@@ -144,7 +144,11 @@
   transform: rotate(-90deg);
 }
 
-.btnRetry:active { transform: translateY(0); }
+.btnRetry:active {
+  transform: translateY(0);
+  background: var(--color-primary-dark);
+  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.22);
+}
 
 .btnHome {
   padding: 16px;
