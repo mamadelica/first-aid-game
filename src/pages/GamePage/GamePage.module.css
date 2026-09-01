@@ -5,6 +5,12 @@
   padding: 0 16px 64px;
   display: flex;
   flex-direction: column;
+  animation: pageIn 0.35s ease;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .header {
